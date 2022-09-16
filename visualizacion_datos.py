@@ -57,6 +57,8 @@ def mostrar_grafico():
         ax.set_title(f"CIERRES DEL DIA PARA '{periodos_ticker[0][1]}' EN EL PERIODO {periodos_ticker[0][2]} A {periodos_ticker[0][3]}")
         plt.show()
 
+        con.close()
+
     else:
         print("\nNo existen registros para el ticker solicitado.")
 
